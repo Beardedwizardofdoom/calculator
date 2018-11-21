@@ -8,13 +8,24 @@ const subtractButton = document.getElementById("subtract-button");
 const multiplyButton = document.getElementById("multiply-button");
 const devisionButton = document.getElementById("devision-button");
 
-addButton.addEventListener("click",);
-console.log();
+addButton.addEventListener("click", plus);
+subtractButton.addEventListener("click", minus);
+multiplyButton.addEventListener("click", times);
+devisionButton.addEventListener("click", devide);
 
-function plus(){}
-function minus(){}
-function times(){}
-function devide(){}
+
+function plus(){
+	console.log("plus");
+}
+function minus(){
+	console.log("minus");
+}
+function times(){
+	console.log( "times");
+}
+function devide(){
+	console.log("devide");
+}
 
 
 
