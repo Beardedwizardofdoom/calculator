@@ -1,45 +1,44 @@
-let num1;
-let num2;
 
-
-const userInput = document.getElementById("userinput");
+const input1 = document.getElementById("input-1");
+const input2 = document.getElementById("input-2");
 const addButton = document.getElementById("add-button");
 const subtractButton = document.getElementById("subtract-button");
 const multiplyButton = document.getElementById("multiply-button");
 const devisionButton = document.getElementById("devision-button");
-const equalsButton = document.getElementById("equals-button");
+const clearButton = document.getElementById("clear-button")
+
 
 addButton.addEventListener("click", plus);
 subtractButton.addEventListener("click", minus);
 multiplyButton.addEventListener("click", times);
 devisionButton.addEventListener("click", devide);
+clearButton.addEventListener("click", clear);
 
 
 function plus(){
 
-	// set num1 to value of userInput
-	// clear input box
-	// listen for equals button addEventListener
-	// do num1+num2 = output
-	// show output on screen
-
-
-	console.log("plus");
+	let addition = parseInt(input1.value) + parseInt(input2.value);
+	console.log(addition);
 }
 function minus(){
-	console.log("minus");
+
+	let subtraction = parseInt(input1.value) - parseInt(input2.value);
+	console.log(subtraction);
 }
 function times(){
-	console.log( "times");
+
+	let multiply = parseInt(input1.value) * parseInt(input2.value);
+	console.log(multiply)	
 }
 function devide(){
-	console.log("devide");
+
+	let devision = parseInt(input1.value) * parseInt(input2.value);
+	console.log(devision)
 }
-function equals(){
-	console.log("equals");
-}
+
 function clear(){
-	console.log("clear");
+	input1.value = "";
+	input2.value = "";
 }
 
 
